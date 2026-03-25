@@ -1,9 +1,15 @@
 require('dotenv').config();
 
-// Determine DB path: use /data on Render, ./data locally
-const dbPath = process.env.RENDER
-  ? '/data/esiti.db'
-  : (process.env.DB_PATH || './data/esiti.db');
+// Determine DB path: use /data on Render if disk mounted, else ./data locally
+const fs = require('fs');
+let dbPath;
+if (process.env.DB_PATH) {
+  dbPath = process.env.DB_PATH;
+} else if (process.env.RENDER && fs.existsSync('/data')) {
+  dbPath = '/data/esiti.db';
+} else {
+  dbPath = './data/esiti.db';
+}
 
 module.exports = {
   PORT: process.env.PORT || 3000,
