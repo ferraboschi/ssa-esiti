@@ -11,7 +11,7 @@ const loginPage = {
           <form id="loginForm" onsubmit="loginPage.handleSubmit(event)">
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="name@example.com">
+              <input type="text" id="email" name="email" required placeholder="name@example.com">
             </div>
 
             <div class="form-group" id="passwordGroup" style="display: none;">
@@ -115,7 +115,7 @@ const loginPage = {
     const password = document.getElementById('password').value;
 
     try {
-      const res = await fetch(app.api('/api/auth/login'), {
+      const res = await fetch('/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
