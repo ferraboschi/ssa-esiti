@@ -1,0 +1,37 @@
+services:
+  - type: web
+    name: ssa-esiti
+    plan: starter
+    runtime: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CLAUDE_API_KEY
+        sync: false
+      - key: AIRTABLE_PAT
+        sync: false
+      - key: CORSI_API_BASE
+        value: https://corsi.sakesommelierassociation.it/api
+      - key: SMTP_HOST
+        value: smtp.gmail.com
+      - key: SMTP_PORT
+        value: 587
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: SMTP_FROM
+        value: noreply@sakesommelierassociation.it
+      - key: DB_PATH
+        value: /data/esiti.db
+    disk:
+      - name: data
+        mountPath: /data
+        sizeGB: 1
+    healthCheckPath: /api/corsi
