@@ -137,4 +137,4 @@ const app = {
   }
 };
 
-window.addEventListener('DOMContentLoaded', () => app.init());
+// init called from index.html after all page scripts are loaded
