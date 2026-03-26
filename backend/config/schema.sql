@@ -113,6 +113,18 @@ CREATE TABLE IF NOT EXISTS log_attivita (
   FOREIGN KEY(user_id) REFERENCES users(id)
 );
 
+CREATE TABLE IF NOT EXISTS iscrizioni (
+  id TEXT PRIMARY KEY,
+  studente_id TEXT NOT NULL,
+  corso_nome TEXT NOT NULL,
+  tipo_corso TEXT CHECK(tipo_corso IN ('introduttivo', 'certificato', 'altro')),
+  citta TEXT,
+  data_corso TEXT,
+  shopify_order_id TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY(studente_id) REFERENCES users(id)
+);
+
 CREATE TABLE IF NOT EXISTS shopify_tokens (
   id TEXT PRIMARY KEY,
   store TEXT NOT NULL,

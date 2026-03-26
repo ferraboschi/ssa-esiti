@@ -120,33 +120,25 @@ router.post('/sync', requireProfessore, async (req, res) => {
           `).run(first_name || '', last_name || '', user.id);
         }
 
-        // Link user to courses based on purchased products
+        // Create enrollment records for each line item (course product)
         for (const lineItem of order.line_items) {
           const productTitle = lineItem.title;
-          const courseId = courseMap.get(productTitle);
+          const parsed = parseCourseTitle(productTitle);
 
-          if (courseId) {
-            // Check if user is already linked to this course
-            const existing = db.prepare(`
-              SELECT * FROM esami WHERE corso_id = ? LIMIT 1
-            `).get(courseId);
+          if (!parsed) continue; // Skip non-course products (merchandise, etc.)
 
-            if (existing) {
-              logger.info('User linked to course', { email, courseId });
-            }
-          } else {
-            // Try to find or create a matching course
-            let matchedCourse = null;
+          // Check if enrollment already exists
+          const existingEnrollment = db.prepare(`
+            SELECT id FROM iscrizioni WHERE studente_id = ? AND shopify_order_id = ? AND corso_nome = ?
+          `).get(user.id, String(order.id), productTitle);
 
-            // Try exact match on product title
-            matchedCourse = db.prepare(`
-              SELECT id FROM corsi WHERE nome = ? LIMIT 1
-            `).get(productTitle);
+          if (!existingEnrollment) {
+            db.prepare(`
+              INSERT INTO iscrizioni (id, studente_id, corso_nome, tipo_corso, citta, data_corso, shopify_order_id)
+              VALUES (?, ?, ?, ?, ?, ?, ?)
+            `).run(uuid(), user.id, productTitle, parsed.tipo, parsed.citta, parsed.data, String(order.id));
 
-            if (matchedCourse) {
-              courseMap.set(productTitle, matchedCourse.id);
-              logger.info('Matched product to existing course', { productTitle, courseId: matchedCourse.id });
-            }
+            logger.info('Created enrollment', { email, corso: productTitle, tipo: parsed.tipo, citta: parsed.citta });
           }
         }
 
@@ -173,6 +165,60 @@ router.post('/sync', requireProfessore, async (req, res) => {
 });
 
 /**
+ * Parse a Shopify product title to extract course type and city.
+ * Examples:
+ *   "Corso di Sake Sommelier Certificato - Aprile 2025, Milano"
+ *     → { tipo: 'certificato', citta: 'Milano', data: 'Aprile 2025' }
+ *   "Corso di Sake Sommelier Introduttivo - Marzo 2025, Roma"
+ *     → { tipo: 'introduttivo', citta: 'Roma', data: 'Marzo 2025' }
+ *   "Aromi del sake - Canvas" → null (not a course)
+ */
+function parseCourseTitle(title) {
+  if (!title) return null;
+
+  const lower = title.toLowerCase();
+
+  // Must contain "corso" or "sommelier" to be a course product
+  if (!lower.includes('corso') && !lower.includes('sommelier')) return null;
+
+  // Skip merchandise or non-course items
+  if (lower.includes('canvas') || lower.includes('poster') || lower.includes('puzzle') ||
+      lower.includes('borraccia') || lower.includes('bottiglia')) return null;
+
+  // Determine course type
+  let tipo = 'altro';
+  if (lower.includes('certificato')) tipo = 'certificato';
+  else if (lower.includes('introduttivo')) tipo = 'introduttivo';
+
+  // Extract city: usually after the last comma
+  let citta = null;
+  let data = null;
+
+  // Pattern: "... - Mese Anno, Città" or "... - Mese Anno, N date Online"
+  const dashParts = title.split(' - ');
+  if (dashParts.length >= 2) {
+    const afterDash = dashParts.slice(1).join(' - ').trim();
+    const commaParts = afterDash.split(',');
+
+    if (commaParts.length >= 2) {
+      citta = commaParts[commaParts.length - 1].trim();
+      data = commaParts.slice(0, -1).join(',').trim();
+    } else {
+      // No comma, the whole part after dash might be just a date
+      data = afterDash;
+    }
+  }
+
+  // Clean up city: remove leading numbers/dates like "8 date Online" → "Online"
+  if (citta) {
+    const onlineMatch = citta.match(/online/i);
+    if (onlineMatch) citta = 'Online';
+  }
+
+  return { tipo, citta, data };
+}
+
+/**
  * Build a map of Shopify product titles/handles to local course IDs
  */
 function buildCourseMap(shopifyProducts, database) {
@@ -184,12 +230,10 @@ function buildCourseMap(shopifyProducts, database) {
     courseMap.set(course.tipo, course.id);
   }
 
-  // Try to match Shopify products to courses
   for (const product of shopifyProducts) {
     const title = product.title.toLowerCase();
     const handle = product.handle.toLowerCase();
 
-    // Look for matching course by name or type
     for (const course of courses) {
       const courseName = course.nome.toLowerCase();
       const courseType = course.tipo.toLowerCase();
@@ -200,10 +244,6 @@ function buildCourseMap(shopifyProducts, database) {
         handle.includes(courseType)
       ) {
         courseMap.set(product.title, course.id);
-        logger.info('Mapped Shopify product to course', {
-          productTitle: product.title,
-          courseId: course.id
-        });
         break;
       }
     }

@@ -36,6 +36,18 @@ const studentiPage = {
 
   renderStudentiList(studenti) {
     if (!studenti.length) return '<p>Nessuno studente</p>';
+
+    const tipoBadge = (tipo) => {
+      if (!tipo) return '<span style="color: #999;">-</span>';
+      const colors = {
+        certificato: { bg: '#e8f5e9', color: '#2e7d32', label: 'Certificato' },
+        introduttivo: { bg: '#fff3e0', color: '#e65100', label: 'Introduttivo' },
+        altro: { bg: '#f3e5f5', color: '#6a1b9a', label: 'Altro' }
+      };
+      const c = colors[tipo] || colors.altro;
+      return '<span style="background:' + c.bg + '; color:' + c.color + '; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500;">' + c.label + '</span>';
+    };
+
     return `
       <table style="width: 100%; border-collapse: collapse; background: white;">
         <thead>
@@ -43,8 +55,9 @@ const studentiPage = {
             <th style="padding: 15px; text-align: left;">Nome</th>
             <th style="padding: 15px; text-align: left;">Cognome</th>
             <th style="padding: 15px; text-align: left;">Email</th>
-            <th style="padding: 15px; text-align: left;">Ruolo</th>
-            <th style="padding: 15px; text-align: left;">Data Creazione</th>
+            <th style="padding: 15px; text-align: left;">Tipo Corso</th>
+            <th style="padding: 15px; text-align: left;">Città</th>
+            <th style="padding: 15px; text-align: left;">Data Corso</th>
           </tr>
         </thead>
         <tbody>
@@ -53,8 +66,9 @@ const studentiPage = {
               <td style="padding: 12px;">${s.nome || '-'}</td>
               <td style="padding: 12px;">${s.cognome || '-'}</td>
               <td style="padding: 12px;">${s.email}</td>
-              <td style="padding: 12px;"><span style="background: #e3f2fd; padding: 4px 8px; border-radius: 3px; font-size: 12px;">${s.ruolo}</span></td>
-              <td style="padding: 12px;">${new Date(s.created_at).toLocaleDateString('it-IT')}</td>
+              <td style="padding: 12px;">${tipoBadge(s.tipo_corso)}${s.altri_corsi ? ' <span style="font-size:11px; color:#888;">+' + s.altri_corsi + '</span>' : ''}</td>
+              <td style="padding: 12px;">${s.citta || '-'}</td>
+              <td style="padding: 12px;">${s.data_corso || '-'}</td>
             </tr>
           `).join('')}
         </tbody>
@@ -67,7 +81,9 @@ const studentiPage = {
     const filtered = this.studenti.filter(s =>
       (s.nome || '').toLowerCase().includes(search) ||
       (s.cognome || '').toLowerCase().includes(search) ||
-      (s.email || '').toLowerCase().includes(search)
+      (s.email || '').toLowerCase().includes(search) ||
+      (s.citta || '').toLowerCase().includes(search) ||
+      (s.tipo_corso || '').toLowerCase().includes(search)
     );
     const container = document.getElementById('studentiList');
     if (container) container.innerHTML = this.renderStudentiList(filtered);

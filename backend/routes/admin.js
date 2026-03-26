@@ -10,7 +10,33 @@ const router = express.Router();
 router.get('/users', requireProfessore, (req, res) => {
   try {
     const users = db.prepare('SELECT id, email, nome, cognome, ruolo, created_at FROM users ORDER BY created_at DESC').all();
-    res.json(users);
+
+    // Enrich each user with enrollment info (most recent enrollment)
+    const enriched = users.map(user => {
+      try {
+        const iscrizioni = db.prepare(`
+          SELECT tipo_corso, citta, corso_nome, data_corso
+          FROM iscrizioni
+          WHERE studente_id = ?
+          ORDER BY created_at DESC
+        `).all(user.id);
+
+        if (iscrizioni.length > 0) {
+          user.tipo_corso = iscrizioni[0].tipo_corso;
+          user.citta = iscrizioni[0].citta;
+          user.corso_nome = iscrizioni[0].corso_nome;
+          user.data_corso = iscrizioni[0].data_corso;
+          if (iscrizioni.length > 1) {
+            user.altri_corsi = iscrizioni.length - 1;
+          }
+        }
+      } catch (e) {
+        // iscrizioni table might not exist yet on first deploy
+      }
+      return user;
+    });
+
+    res.json(enriched);
   } catch (err) {
     logger.error('Get users error', { error: err.message });
     res.status(500).json({ error: 'Server error' });
