@@ -4,7 +4,7 @@ const esitoDetailPage = {
 
   async render(id) {
     try {
-      this.esito = await app.api(`/api/esiti/${id}`);
+      this.esito = await app.api(`/esiti/${id}`);
       const categorie = this.esito.analisi_per_categoria ?
         JSON.parse(this.esito.analisi_per_categoria) : {};
 
@@ -81,7 +81,7 @@ const esitoDetailPage = {
   async inviaEmail() {
     if (!this.esito.email_inviata) {
       try {
-        const res = await app.api(`/api/email/invia/${this.esito.id}`, {
+        const res = await app.api(`/email/invia/${this.esito.id}`, {
           method: 'POST'
         });
         app.toast(`Email inviata a ${res.sent_to}`);

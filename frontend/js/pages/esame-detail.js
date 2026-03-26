@@ -5,8 +5,8 @@ const esameDetailPage = {
 
   async render(id) {
     try {
-      this.esame = await fetch(app.api(`/api/esami/${id}`)).then(r => r.json());
-      this.domande = await fetch(app.api(`/api/domande?esame_id=${id}`)).then(r => r.json());
+      this.esame = await app.api(`/esami/${id}`);
+      this.domande = await app.api(`/domande?esame_id=${id}`);
 
       const html = `
         <div class="page-header">
@@ -110,7 +110,7 @@ const esameDetailPage = {
 
   async triggerCorrection() {
     try {
-      await fetch(app.api(`/api/upload/correggi/${this.esame.id}`), { method: 'POST' });
+      await app.api(`/upload/correggi/${this.esame.id}`, { method: 'POST' });
       alert('Correzione avviata');
     } catch (err) {
       alert('Errore nella correzione');

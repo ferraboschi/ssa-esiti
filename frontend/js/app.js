@@ -31,12 +31,15 @@ const app = {
     const pages = {
       'login': () => loginPage.render(),
       'dashboard': () => dashboardPage.render(),
+      'corsi': () => corsiPage.render(),
       'esami': () => param ? esameDetailPage.render(param) : esamiPage.render(),
       'domande': () => domandePage.render(param),
+      'valutazione': () => valutazionePage.render(),
       'studenti': () => studentiPage.render(),
       'esiti': () => param ? esitoDetailPage.render(param) : esitiPage.render(),
       'esiti-miei': () => esitiPage.render(true),
       'email': () => emailPage.render(),
+      'notifiche': () => notifichePage.render(),
       'knowledge-base': () => kbPage.render(),
       'api-keys': () => apiKeysPage.render(),
       'impostazioni': () => impostazioniPage.render(),
@@ -65,19 +68,22 @@ const app = {
     const nav = isProf ? `
       <a href="#/dashboard" class="nav-item">Dashboard</a>
       <div class="nav-sep">Gestione</div>
-      <a href="#/esami" class="nav-item">Esami</a>
-      <a href="#/domande" class="nav-item">Domande</a>
-      <a href="#/studenti" class="nav-item">Studenti</a>
-      <div class="nav-sep">Analisi</div>
-      <a href="#/esiti" class="nav-item">Esiti</a>
-      <a href="#/email" class="nav-item">Email</a>
+      <a href="#/corsi" class="nav-item">🍶 Corsi</a>
+      <a href="#/esami" class="nav-item">📝 Esami</a>
+      <a href="#/domande" class="nav-item">❓ Domande</a>
+      <a href="#/valutazione" class="nav-item">✅ Valutazione</a>
+      <a href="#/studenti" class="nav-item">👥 Studenti</a>
+      <div class="nav-sep">Analisi & Comunicazione</div>
+      <a href="#/esiti" class="nav-item">📊 Esiti</a>
+      <a href="#/email" class="nav-item">📧 Email Esiti</a>
+      <a href="#/notifiche" class="nav-item">🔔 Notifiche</a>
       <div class="nav-sep">Config</div>
-      <a href="#/knowledge-base" class="nav-item">Knowledge Base</a>
-      <a href="#/api-keys" class="nav-item">API Keys</a>
-      <a href="#/impostazioni" class="nav-item">Impostazioni</a>
+      <a href="#/knowledge-base" class="nav-item">📚 Knowledge Base</a>
+      <a href="#/api-keys" class="nav-item">🔑 API Keys</a>
+      <a href="#/impostazioni" class="nav-item">⚙️ Impostazioni</a>
     ` : `
-      <a href="#/esiti-miei" class="nav-item">I miei Esiti</a>
-      <a href="#/impostazioni" class="nav-item">Profilo</a>
+      <a href="#/esiti-miei" class="nav-item">📊 I miei Esiti</a>
+      <a href="#/impostazioni" class="nav-item">⚙️ Profilo</a>
     `;
 
     document.getElementById('app').innerHTML = `

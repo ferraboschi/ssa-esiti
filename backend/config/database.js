@@ -14,6 +14,14 @@ db.pragma('journal_mode = WAL');
 const schema = fs.readFileSync(path.join(__dirname, 'schema.sql'), 'utf-8');
 db.exec(schema);
 
+// Migration: add last_used column to api_keys if missing
+try {
+  const cols = db.prepare("PRAGMA table_info(api_keys)").all();
+  if (!cols.find(c => c.name === 'last_used')) {
+    db.exec('ALTER TABLE api_keys ADD COLUMN last_used DATETIME');
+  }
+} catch (e) { /* table may not exist yet */ }
+
 try {
   if (db.prepare('SELECT COUNT(*) FROM corsi').get()['COUNT(*)'] === 0) {
     db.prepare('INSERT INTO corsi (id, nome, tipo, descrizione) VALUES (?, ?, ?, ?)').run(

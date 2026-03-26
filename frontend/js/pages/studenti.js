@@ -3,7 +3,7 @@ const studentiPage = {
 
   async render() {
     try {
-      const users = await fetch(app.api('/api/admin/users')).then(r => r.json());
+      const users = await app.api('/admin/users');
       this.studenti = users.filter(u => u.ruolo === 'studente');
 
       const html = `
@@ -68,7 +68,13 @@ const studentiPage = {
     if (container) container.innerHTML = this.renderStudentiList(filtered);
   },
 
-  syncAirtable() {
-    alert('Sincronizzazione da Airtable - in sviluppo');
+  async syncAirtable() {
+    try {
+      const res = await app.api('/airtable/sync', { method: 'POST' });
+      app.toast(`Sincronizzati ${res.synced} studenti da Airtable`);
+      this.render();
+    } catch (err) {
+      app.toast('Errore nella sincronizzazione: ' + err.message, 'error');
+    }
   }
 };

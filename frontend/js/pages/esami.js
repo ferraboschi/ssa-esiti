@@ -3,7 +3,7 @@ const esamiPage = {
 
   async render() {
     try {
-      this.esami = await fetch(app.api('/api/esami')).then(r => r.json());
+      this.esami = await app.api('/esami');
 
       const html = `
         <div class="page-header">
@@ -90,7 +90,7 @@ const esamiPage = {
 
   async loadCorsiForSelect() {
     try {
-      const corsi = await fetch(app.api('/api/corsi')).then(r => r.json());
+      const corsi = await app.api('/corsi');
       const select = document.getElementById('corsoSelect');
       select.innerHTML = corsi.map(c => `<option value="${c.id}">${c.nome}</option>`).join('');
     } catch (err) {
@@ -110,9 +110,8 @@ const esamiPage = {
     e.preventDefault();
     const data = new FormData(e.target);
     try {
-      await fetch(app.api('/api/esami'), {
+      await app.api('/esami', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(Object.fromEntries(data))
       });
       this.closeModal();

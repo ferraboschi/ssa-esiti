@@ -4,7 +4,7 @@ const apiKeysPage = {
 
   async render() {
     try {
-      const res = await app.api('/api/api-keys');
+      const res = await app.api('/api-keys');
       this.keys = res;
 
       const html = `
@@ -98,7 +98,7 @@ const apiKeysPage = {
     e.preventDefault();
     const fd = new FormData(e.target);
     try {
-      const res = await app.api('/api/api-keys', {
+      const res = await app.api('/api-keys', {
         method: 'POST',
         body: JSON.stringify({ nome: fd.get('nome') })
       });

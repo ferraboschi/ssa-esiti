@@ -6,29 +6,25 @@ const emailPage = {
 
   async render() {
     try {
-      this.exams = await app.api('/api/esami');
+      this.exams = await app.api('/esami');
 
       const html = `
-        <div class="page-header">
-          <h1>Email</h1>
-          <p style="color: #6B7280;">Invia email di feedback</p>
+        <div class="page-header" style="margin-bottom: 20px;">
+          <h2 style="margin: 0;">Email Esiti</h2>
+          <p style="color: var(--color-neutral-text-secondary); margin-top: 4px;">Invia email di feedback con risultati esame</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
-          <div>
-            <div class="form-group">
-              <label class="form-label">Seleziona Esame</label>
-              <select class="form-select" onchange="emailPage.selectExam(this.value)">
-                <option value="">-- Scegli un esame --</option>
-                ${this.exams.map(e => `<option value="${e.id}">${e.nome}</option>`).join('')}
-              </select>
-            </div>
-          </div>
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; margin-bottom: 6px; font-weight: 500; font-size: 13px;">Seleziona Esame</label>
+          <select style="padding: 10px; border: 1px solid var(--color-neutral-border); border-radius: var(--radius-md); min-width: 300px;" onchange="emailPage.selectExam(this.value)">
+            <option value="">-- Scegli un esame --</option>
+            ${this.exams.map(e => `<option value="${e.id}">${e.nome} (${e.tipo})</option>`).join('')}
+          </select>
         </div>
 
-        <div id="esiti-list" style="margin-top: 24px;"></div>
+        <div id="esiti-list"></div>
       `;
-      app.layout('Email', html);
+      app.layout('Email Esiti', html);
     } catch (err) {
       app.toast('Errore nel caricamento', 'error');
     }
@@ -42,8 +38,7 @@ const emailPage = {
     }
 
     try {
-      const res = await app.api('/api/esiti/miei');
-      this.esiti = res.filter(e => e.esame_id === examId);
+      this.esiti = await app.api(`/esiti/per-esame/${examId}`);
       this.renderEsitiList();
     } catch (err) {
       app.toast('Errore nel caricamento esiti', 'error');
@@ -52,39 +47,31 @@ const emailPage = {
 
   renderEsitiList() {
     const html = `
-      <div class="card">
-        <div style="padding: 16px; font-weight: 600; border-bottom: 1px solid #E5E7EB;">
-          Risultati (${this.esiti.length})
+      <div style="background: white; border-radius: var(--radius-lg); border: 1px solid var(--color-neutral-border-light); overflow: hidden;">
+        <div style="padding: 16px; font-weight: 600; border-bottom: 1px solid var(--color-neutral-border-light); display: flex; justify-content: space-between; align-items: center;">
+          <span>Risultati (${this.esiti.length})</span>
+          ${this.esiti.length ? `<button onclick="emailPage.inviaPerTutti()" style="padding: 8px 16px; background: var(--color-primary); color: white; border: none; border-radius: var(--radius-md); cursor: pointer; font-size: 13px;">Invia Tutti</button>` : ''}
         </div>
         ${this.esiti.length === 0 ? `
-          <div style="padding: 24px; text-align: center; color: #9CA3AF;">
+          <div style="padding: 24px; text-align: center; color: var(--color-neutral-text-tertiary);">
             Nessun esito per questo esame
           </div>
-        ` : `
-          ${this.esiti.map(e => `
-            <div style="padding: 16px; border-bottom: 1px solid #E5E7EB; display: flex; justify-content: space-between; align-items: center;">
-              <div>
-                <div style="font-weight: 600;">Studente ${e.id}</div>
-                <div style="font-size: 0.875rem; color: #6B7280;">
-                  ${e.punteggio_percentuale}% • ${new Date(e.created_at).toLocaleDateString('it-IT')}
-                </div>
-              </div>
-              <div style="display: flex; gap: 8px;">
-                <span class="badge ${e.email_inviata ? 'badge-success' : 'badge-warning'}">
-                  ${e.email_inviata ? '✓ Inviata' : 'In sospeso'}
-                </span>
-                <button class="btn btn-sm btn-primary" onclick="emailPage.inviaEsito('${e.id}')">
-                  Invia
-                </button>
+        ` : this.esiti.map(e => `
+          <div style="padding: 16px; border-bottom: 1px solid var(--color-neutral-border-light); display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <div style="font-weight: 500;">${e.nome || ''} ${e.cognome || ''}</div>
+              <div style="font-size: 12px; color: var(--color-neutral-text-secondary);">
+                ${e.email} • ${e.punteggio_percentuale?.toFixed(1) || 0}% • ${e.tipo_esito || ''}
               </div>
             </div>
-          `).join('')}
-          <div style="padding: 16px;">
-            <button class="btn btn-primary" onclick="emailPage.inviaPerTutti()">
-              ✉️ Invia Tutti
-            </button>
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <span style="font-size: 12px; padding: 3px 8px; border-radius: var(--radius-full); background: ${e.email_inviata ? 'var(--color-success-light)' : 'var(--color-warning-light)'}; color: ${e.email_inviata ? '#1B8A3B' : '#B36D00'};">
+                ${e.email_inviata ? '✓ Inviata' : 'In sospeso'}
+              </span>
+              ${!e.email_inviata ? `<button onclick="emailPage.inviaEsito('${e.id}')" style="padding: 6px 12px; background: var(--color-primary); color: white; border: none; border-radius: var(--radius-sm); cursor: pointer; font-size: 12px;">Invia</button>` : ''}
+            </div>
           </div>
-        `}
+        `).join('')}
       </div>
     `;
     document.getElementById('esiti-list').innerHTML = html;
@@ -92,26 +79,22 @@ const emailPage = {
 
   async inviaEsito(esitoId) {
     try {
-      const res = await app.api(`/api/email/invia/${esitoId}`, {
-        method: 'POST'
-      });
+      const res = await app.api(`/email/invia/${esitoId}`, { method: 'POST' });
       app.toast(`Email inviata a ${res.sent_to}`);
       this.selectExam(this.selectedExamId);
     } catch (err) {
-      app.toast('Errore nell\'invio', 'error');
+      app.toast("Errore nell'invio", 'error');
     }
   },
 
   async inviaPerTutti() {
+    if (!confirm('Inviare email a tutti gli studenti?')) return;
     try {
-      const res = await app.api(
-        `/api/email/invia-tutti/${this.selectedExamId}`,
-        { method: 'POST' }
-      );
+      const res = await app.api(`/email/invia-tutti/${this.selectedExamId}`, { method: 'POST' });
       app.toast(`Inviate ${res.sent}/${res.total} email`);
       this.selectExam(this.selectedExamId);
     } catch (err) {
-      app.toast('Errore nell\'invio', 'error');
+      app.toast("Errore nell'invio batch", 'error');
     }
   }
 };

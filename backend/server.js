@@ -33,6 +33,9 @@ app.use('/api/domande', require('./routes/domande'));
 app.use('/api/api-keys', require('./routes/api-keys'));
 app.use('/api/knowledge-base', require('./routes/knowledge-base'));
 app.use('/api/email', require('./routes/email-send'));
+app.use('/api/notifiche', require('./routes/notifiche'));
+app.use('/api/airtable', require('./routes/airtable-sync'));
+app.use('/api/export', require('./routes/export'));
 
 // Catch-all for SPA
 app.get('*', (req, res) => {

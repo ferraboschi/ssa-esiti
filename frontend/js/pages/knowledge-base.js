@@ -5,7 +5,7 @@ const kbPage = {
 
   async render() {
     try {
-      const res = await app.api('/api/knowledge-base');
+      const res = await app.api('/knowledge-base');
       this.entries = res;
 
       const html = `
@@ -122,7 +122,7 @@ const kbPage = {
     e.preventDefault();
     const fd = new FormData(e.target);
     try {
-      await app.api('/api/knowledge-base', {
+      await app.api('/knowledge-base', {
         method: 'POST',
         body: JSON.stringify(Object.fromEntries(fd))
       });

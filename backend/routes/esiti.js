@@ -8,16 +8,41 @@ const router = express.Router();
 
 router.get('/miei', authenticateToken, (req, res) => {
   try {
-    const esiti = db.prepare(`
-      SELECT e.*, ex.nome as esame_nome FROM esiti e
-      LEFT JOIN esami ex ON e.esame_id = ex.id
-      WHERE e.studente_id = ?
-      ORDER BY e.created_at DESC
-    `).all(req.user.id);
+    // Professors get ALL esiti, students get only theirs
+    const query = req.user.ruolo === 'professore'
+      ? `SELECT e.*, ex.nome as esame_nome, u.email, u.nome, u.cognome
+         FROM esiti e LEFT JOIN esami ex ON e.esame_id = ex.id
+         LEFT JOIN users u ON e.studente_id = u.id ORDER BY e.created_at DESC`
+      : `SELECT e.*, ex.nome as esame_nome FROM esiti e
+         LEFT JOIN esami ex ON e.esame_id = ex.id
+         WHERE e.studente_id = ? ORDER BY e.created_at DESC`;
+
+    const esiti = req.user.ruolo === 'professore'
+      ? db.prepare(query).all()
+      : db.prepare(query).all(req.user.id);
 
     res.json(esiti);
   } catch (err) {
     logger.error('Get results error', { error: err.message });
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+// Get all esiti for a specific exam (professors only)
+router.get('/per-esame/:esame_id', authenticateToken, (req, res) => {
+  try {
+    if (req.user.ruolo !== 'professore') return res.status(403).json({ error: 'Not authorized' });
+
+    const esiti = db.prepare(`
+      SELECT e.*, u.email, u.nome, u.cognome
+      FROM esiti e JOIN users u ON e.studente_id = u.id
+      WHERE e.esame_id = ?
+      ORDER BY u.cognome, u.nome
+    `).all(req.params.esame_id);
+
+    res.json(esiti);
+  } catch (err) {
+    logger.error('Get exam results error', { error: err.message });
     res.status(500).json({ error: 'Server error' });
   }
 });

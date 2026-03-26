@@ -99,6 +99,7 @@ CREATE TABLE IF NOT EXISTS api_keys (
   chiave TEXT UNIQUE NOT NULL,
   nome TEXT,
   attiva INTEGER DEFAULT 1,
+  last_used DATETIME,
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY(user_id) REFERENCES users(id)
 );
