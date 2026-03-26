@@ -141,7 +141,7 @@ const kbPage = {
   async deleteEntry(id) {
     if (confirm('Eliminare questo articolo?')) {
       try {
-        await app.api(`/api/knowledge-base/${id}`, { method: 'DELETE' });
+        await app.api(`/knowledge-base/${id}`, { method: 'DELETE' });
         app.toast('Articolo eliminato');
         this.render();
       } catch (err) {

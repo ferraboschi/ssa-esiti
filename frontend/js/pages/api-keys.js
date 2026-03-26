@@ -118,7 +118,7 @@ const apiKeysPage = {
   async deleteKey(id) {
     if (confirm('Eliminare questa chiave?')) {
       try {
-        await app.api(`/api/api-keys/${id}`, { method: 'DELETE' });
+        await app.api(`/api-keys/${id}`, { method: 'DELETE' });
         app.toast('Chiave eliminata');
         this.render();
       } catch (err) {
