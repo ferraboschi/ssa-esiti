@@ -8,6 +8,11 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+// Cookie parser for OAuth nonce verification
+const cookieParser = require('cookie-parser');
+app.use(cookieParser());
+
 app.use(express.static(path.join(__dirname, '../frontend')));
 
 // Request logging middleware
@@ -109,6 +114,8 @@ app.use('/api/knowledge-base', require('./routes/knowledge-base'));
 app.use('/api/email', require('./routes/email-send'));
 app.use('/api/notifiche', require('./routes/notifiche'));
 app.use('/api/airtable', require('./routes/airtable-sync'));
+app.use('/api/shopify/auth', require('./routes/shopify-auth'));
+app.use('/api/shopify', require('./routes/shopify-sync'));
 app.use('/api/export', require('./routes/export'));
 
 // Catch-all for SPA

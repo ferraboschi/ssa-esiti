@@ -113,6 +113,15 @@ CREATE TABLE IF NOT EXISTS log_attivita (
   FOREIGN KEY(user_id) REFERENCES users(id)
 );
 
+CREATE TABLE IF NOT EXISTS shopify_tokens (
+  id TEXT PRIMARY KEY,
+  store TEXT NOT NULL,
+  access_token TEXT NOT NULL,
+  scope TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
 CREATE INDEX IF NOT EXISTS idx_risposte_studente ON risposte_studenti(studente_id);
 CREATE INDEX IF NOT EXISTS idx_esiti_studente ON esiti(studente_id);
 CREATE INDEX IF NOT EXISTS idx_domande_esame ON domande(esame_id);

@@ -9,9 +9,14 @@ const studentiPage = {
       const html = `
         <div class="page-header">
           <h1>Studenti</h1>
-          <button onclick="studentiPage.syncAirtable()" style="padding: 8px 16px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer;">
-            Sincronizza da Airtable
-          </button>
+          <div style="display: flex; gap: 10px;">
+            <button onclick="studentiPage.syncAirtable()" style="padding: 8px 16px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer;">
+              Sincronizza da Airtable
+            </button>
+            <button onclick="studentiPage.syncShopify()" style="padding: 8px 16px; background: #96a500; color: white; border: none; border-radius: 4px; cursor: pointer;">
+              Sincronizza da Shopify
+            </button>
+          </div>
         </div>
 
         <div style="margin-bottom: 20px;">
@@ -75,6 +80,28 @@ const studentiPage = {
       this.render();
     } catch (err) {
       app.toast('Errore nella sincronizzazione: ' + err.message, 'error');
+    }
+  },
+
+  async syncShopify() {
+    try {
+      app.toast('Sincronizzazione da Shopify in corso...', 'info');
+      const res = await app.api('/shopify/sync', { method: 'POST' });
+
+      let message = `Sincronizzati ${res.synced} ordini da Shopify`;
+      if (res.created > 0) {
+        message += ` (${res.created} nuovi studenti)`;
+      }
+
+      if (res.errors && res.errors.length > 0) {
+        console.warn('Shopify sync errors:', res.errors);
+        message += ` - ${res.errors.length} errori`;
+      }
+
+      app.toast(message, 'success');
+      this.render();
+    } catch (err) {
+      app.toast('Errore nella sincronizzazione Shopify: ' + err.message, 'error');
     }
   }
 };

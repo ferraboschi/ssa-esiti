@@ -19,6 +19,10 @@ module.exports = {
   CORSI_API_URL: process.env.CORSI_API_BASE || 'https://corsi.sakesommelierassociation.it/api',
   DB_PATH: dbPath,
   NODE_ENV: process.env.NODE_ENV || 'development',
+  SHOPIFY_STORE: process.env.SHOPIFY_STORE || 'sakesommelierassociation',
+  SHOPIFY_CLIENT_ID: process.env.SHOPIFY_CLIENT_ID,
+  SHOPIFY_CLIENT_SECRET: process.env.SHOPIFY_CLIENT_SECRET,
+  SHOPIFY_ACCESS_TOKEN: process.env.SHOPIFY_ACCESS_TOKEN,
   SMTP: {
     HOST: process.env.SMTP_HOST || 'smtp.gmail.com',
     PORT: parseInt(process.env.SMTP_PORT) || 587,
