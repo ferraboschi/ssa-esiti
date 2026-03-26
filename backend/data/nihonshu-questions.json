@@ -1,0 +1,902 @@
+[
+  {
+    "numero": 1,
+    "categoria": "STORIA",
+    "testo_it": "Dalla fine dell'epoca Edo, l'area di Nada 灘,  nella prefettura di Hyōgo, è diventata uno dei centri più rinomati per la produzione di nihonshu in Giappone. Quale fattore specifico ha maggiormente contribuito a questo successo?",
+    "risposta_corretta_it": "Il Miyamizu, un'acqua di sorgente ricca di minerali, considerata ideale per la fermentazione del nihonshu",
+    "opzioni_it": "[\"Il Miyamizu, un'acqua di sorgente ricca di minerali, considerata ideale per la fermentazione del nihonshu\", \"Il kōji, un fungo fondamentale per la produzione di nihonshu, sviluppato inizialmente a Hyōgo\", \"La tecnica del shirokaki, una pratica agricola di preparazione del terreno per la coltivazione del riso\", \"La presenza di foreste di cedro che forniscono botti per l'affinamento di taru-zake\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 2,
+    "categoria": "STORIA",
+    "testo_it": "Qual era l’ingrediente principale della prima bevanda alcolica fermentata di cui si ha traccia archeologica in Giappone, risalente al periodo Jōmon?",
+    "risposta_corretta_it": "Uva selvatica giapponese (Yama budou), fermentata spontaneamente per produrre un vino arcaico",
+    "opzioni_it": "[\"Uva selvatica giapponese (Yama budou), fermentata spontaneamente per produrre un vino arcaico\", \"Miele, usato per produrre un antico idromele giapponese\", \"Riso sbiancato, fermentato come primo esempio di sake primitivo\", \"Foglie e cereali, mescolati in acqua e lasciati fermentare naturalmente\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 3,
+    "categoria": "STORIA",
+    "testo_it": "Quando fu adottata per la prima volta la pastorizzazione nella produzione del nihonshu in Giappone?",
+    "risposta_corretta_it": "Prima che Pasteur descrivesse il processo di pastorizzazione (intuitivamente già praticata nel XVII secolo)",
+    "opzioni_it": "[\"Prima che Pasteur descrivesse il processo di pastorizzazione (intuitivamente già praticata nel XVII secolo)\", \"Nello stesso periodo in cui Pasteur descrisse la pastorizzazione, a metà Ottocento\", \"Dopo che Pasteur pubblicò i suoi studi sulla pastorizzazione nel 1864\", \"Nel periodo Meiji, in seguito a contatti con la scienza europea\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 4,
+    "categoria": "STORIA",
+    "testo_it": "Quanle tra i seguenti valori indica la capacità volumetrica di un isshōbin 一升瓶?",
+    "risposta_corretta_it": "1.8 lt",
+    "opzioni_it": "[\"1.8 lt\", \"1.5 lt\", \"1.2 lt\", \"2.0 lt\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 5,
+    "categoria": "STORIA",
+    "testo_it": "Quale di questi tre eventi ha segnato l'industria del nihonshu nell'anno 1992?",
+    "risposta_corretta_it": "Abolizione del sistema di classificazione qualitativa nei livelli \"Speciale\", \"Primo\" e \"Secondo\" con relativa tassazione",
+    "opzioni_it": "[\"Abolizione del sistema di classificazione qualitativa nei livelli \\\"Speciale\\\", \\\"Primo\\\" e \\\"Secondo\\\" con relativa tassazione\", \"Abolizione dell'uso dei conservanti\", \"Approvazione legale per l'uso dei macchinari per la sbiancatura\", \"Introduzione dell'obbligo di indicare il seimaibuai in etichetta\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 6,
+    "categoria": "STORIA",
+    "testo_it": "Che cosa ha scoperto il professor Ikeda Kikunae 池田菊苗 nel 1908, rivoluzionando la comprensione del gusto?",
+    "risposta_corretta_it": "L’Umami 旨味",
+    "opzioni_it": "[\"L’Umami 旨味\", \"L’Acidità 酸味\", \"Il Kokumi コク味\", \"L'astringenza 渋味\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 7,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Quale delle seguenti definizioni meglio descrive il processo di fermentazione multipla parallela (並行複発酵 heikō fuku hakkō)?",
+    "risposta_corretta_it": "La conversione dell’amido in zuccheri e la fermentazione degli zuccheri in alcol avvengono simultaneamente nello stesso tank, grazie all’azione combinata del kōji e del lievito",
+    "opzioni_it": "[\"La conversione dell’amido in zuccheri e la fermentazione degli zuccheri in alcol avvengono simultaneamente nello stesso tank, grazie all’azione combinata del kōji e del lievito\", \"La fermentazione multipla parallela è un processo in cui l’amido viene prima convertito in zucchero e solo successivamente, in un secondo stadio, fermentato in alcol\", \"È un processo in cui più ceppi di lievito vengono usati contemporaneamente per ottenere un profilo aromatico complesso\", \"È il metodo utilizzato per carbonare naturalmente il prodotto attraverso l’aggiunta di zucchero e lievito in bottiglia\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 8,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Quale delle seguenti opzioni descrive correttamente tre condizioni ottimali della kōji-muro per la crescita del kōji?",
+    "risposta_corretta_it": "Temperatura 35°C, umidità elevata iniziale, ventilazione controllata",
+    "opzioni_it": "[\"Temperatura 35°C, umidità elevata iniziale, ventilazione controllata\", \"Temperatura 20°C, ambiente secco, riso bagnato e colloso\", \"Temperatura sotto i 25°C, umidità minima, ventilazione intensa\", \"Temperatura 38°C, ambiente completamente chiuso e senza ossigeno\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 9,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Quali sono le principali differenze tra hanmai 飯米 e sakamai 酒米?",
+    "risposta_corretta_it": "Sakamai ha un centro amidaceo più grande (shinpaku), un chicco più grande e fragile, ed è più adatto alla lavorazione del kōji",
+    "opzioni_it": "[\"Sakamai ha un centro amidaceo più grande (shinpaku), un chicco più grande e fragile, ed è più adatto alla lavorazione del kōji\", \"Hanmai ha un chicco più grosso e assorbe meglio il kōji rispetto al sakamai\", \"Hanmai è più adatto alla fermentazione perché contiene più proteine e grassi rispetto al sakamai\", \"Sakamai e hanmai sono identici, ma il primo viene lucidato meno per risparmiare nei nihonshu da tavola\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 10,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Se un nihonshu ha un seimaibuai 精米歩合 del 70%, a quale delle seguenti categorie designate 特定名称 potrebbe appartenere?",
+    "risposta_corretta_it": "Junmai o Honjōzō, in quanto entrambe le categorie accettano un seimaibuai fino al 70%",
+    "opzioni_it": "[\"Junmai o Honjōzō, in quanto entrambe le categorie accettano un seimaibuai fino al 70%\", \"Ginjō o Junmai Ginjō, poiché richiedono un seimaibuai minimo del 70%\", \"Futsūshu, perché solo i nihonshu non classificati possono usare riso con quel livello di raffinazione\", \"Daiginjō, poiché qualsiasi nihonshu con seimaibuai inferiore all’80% rientra in questa categoria\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 11,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Se un nihonshu ha un seimaibuai 精米歩合 del 60%, a quale delle seguenti categorie designate 特定名称 potrebbe appartenere?",
+    "risposta_corretta_it": "Ginjō o Junmai Ginjō, poiché entrambe richiedono un seimaibuai pari o inferiore al 60%",
+    "opzioni_it": "[\"Ginjō o Junmai Ginjō, poiché entrambe richiedono un seimaibuai pari o inferiore al 60%\", \"Junmai Daiginjō, perché richiede un seimaibuai inferiore al 60%\", \"Futsūshu, in quanto non richiede alcun seimaibuai minimo e include tutti i tipi di nihonshu\", \"Honjōzō o Junmai, che richiedono una raffinazione pari almeno al 50%\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 12,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Se un nihonshu ha un seimaibuai 精米歩合 del 50%, a quale delle seguenti categorie designate 特定名称 potrebbe appartenere?",
+    "risposta_corretta_it": "Junmai o Honjozo, poiché entrambe richiedono un seimaibuai intorno al 70%",
+    "opzioni_it": "[\"Junmai o Honjozo, poiché entrambe richiedono un seimaibuai intorno al 70%\", \"Daiginjo o Junmai Daiginjo, poiché entrambe richiedono un seimaibuai pari o inferiore al 50%\", \"Ginjō, che richiede un seimaibuai superiore al 60% e una fermentazione più breve\", \"Futsushu, poiché include solo nihonshu prodotti con riso non raffinato\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 13,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Quali elementi vengono rimossi dal chicco di riso con il diminuire del seimaibuai 精米歩合?",
+    "risposta_corretta_it": "Proteine, lipidi e minerali presenti negli strati esterni del chicco di riso",
+    "opzioni_it": "[\"Proteine, lipidi e minerali presenti negli strati esterni del chicco di riso\", \"L’amido centrale (shinpaku), essenziale per la fermentazione\", \"Gli zuccheri semplici già presenti nel riso lucido\", \"Le spore di kōji naturalmente presenti nel riso grezzo\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 14,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Quali tra queste è una corretta definizione di shimpaku 心白 e perché è rilevante nella produzione di nihonshu?",
+    "risposta_corretta_it": "È il nucleo amidaceo opaco del chicco di riso, essenziale per la saccarificazione da parte del kōji",
+    "opzioni_it": "[\"È il nucleo amidaceo opaco del chicco di riso, essenziale per la saccarificazione da parte del kōji\", \"È uno strato proteico esterno del chicco che favorisce la proliferazione del lievito\", \"È la parte più ricca di grassi del riso, importante per il profilo aromatico del nihonshu\", \"È il centro vuoto del chicco, responsabile della sua fragilità durante la fermentazione\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 15,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Quale di queste definizioni è calzante per la figura del toji 杜氏 all'interno della sakagura 酒蔵 e quali sono i suoi compiti principali?",
+    "risposta_corretta_it": "È il maestro cantiniere responsabile della produzione del nihonshu, che supervisiona tutte le fasi della lavorazione e gestisce il team di produzione",
+    "opzioni_it": "[\"È il maestro cantiniere responsabile della produzione del nihonshu, che supervisiona tutte le fasi della lavorazione e gestisce il team di produzione\", \"È il tecnico addetto al controllo qualità, che interviene solo alla fine del processo produttivo\", \"È il responsabile commerciale della sakagura, che si occupa della distribuzione e vendita del prodotto\", \"È un apprendista specializzato nella pulizia degli ambienti e nel lavaggio del riso\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 16,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Quale di queste definizioni meglio descrive il concetto di seimaibuai 精米歩合?",
+    "risposta_corretta_it": "È la percentuale di chicco di riso che rimane dopo la raffinazione, indicativa di quanto questo sia stato lucidato",
+    "opzioni_it": "[\"È la percentuale di chicco di riso che rimane dopo la raffinazione, indicativa di quanto questo sia stato lucidato\", \"È il rapporto tra riso e acqua utilizzato nella fase di fermentazione\", \"È la temperatura ottimale della koji muro durante la lavorazione del riso\", \"È la quantità di zuccheri presenti nel riso prima della fermentazione\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 17,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Il nihonshu è un prodotto ottenuto da un processo di distillazione",
+    "risposta_corretta_it": "Falso: il nihonshu è una bevanda fermentata, non distillata, ottenuta da riso, kōji e acqua",
+    "opzioni_it": "[\"Falso: il nihonshu è una bevanda fermentata, non distillata, ottenuta da riso, kōji e acqua\", \"Vero: il nihonshu viene distillato come lo shōchū, ma con una gradazione alcolica più bassa\", \"Vero: il nihonshu è simile al whisky giapponese, che si ottiene anch’esso dalla distillazione di cereali\", \"Falso: il nihonshu è filtrato e pastorizzato ma non fermentato, il che lo rende unico tra gli alcolici\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 18,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Qual è l'elemento contenuto nell'acqua maggiormente dannoso per l'ottenimento di un buon nihonshu?",
+    "risposta_corretta_it": "Ferro, perché altera colore, aroma e sapore del sake",
+    "opzioni_it": "[\"Ferro, perché altera colore, aroma e sapore del sake\", \"Calcio, perché blocca la fermentazione del kōji\", \"Zolfo, perché inibisce la formazione di alcol etilico\", \"Magnesio, perché impedisce al lievito di attivarsi correttamente\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 19,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Quale delle seguenti affermazioni è corretta in relazione alla produzione e alle categorie di qualità riconosciute di nihonshu?",
+    "risposta_corretta_it": "Il seimaibuai può effettivamente essere anche dell'80%, soprattutto nei sake non premium come i futsūshu",
+    "opzioni_it": "[\"Il seimaibuai può effettivamente essere anche dell'80%, soprattutto nei sake non premium come i futsūshu\", \"Il futsūshu è sempre junmai perché non prevede l'aggiunta di alcol\", \"Ogni nihonshu viene prodotto senza aggiunta di alcol, per mantenere la purezza del riso\", \"I sake con seimaibuai superiore al 70% non possono essere venduti in Giappone\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 20,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Durante il processo di fermentazione di bevande alcoliche come sake, vino e birra, quale componente è direttamente responsabile della trasformazione degli zuccheri in alcol etilico (etanolo)?",
+    "risposta_corretta_it": "I lieviti, che convertono gli zuccheri fermentabili in alcol e anidride carbonica",
+    "opzioni_it": "[\"I lieviti, che convertono gli zuccheri fermentabili in alcol e anidride carbonica\", \"Il kōji, che trasforma l'amido del riso in zuccheri semplici e successivamente in alcol\", \"L'acido lattico, che acidifica l'ambiente producendo alcol\", \"Il riso lucidato, che costituisce la base del sake rendendo possibile la fermentazione alcolica\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 21,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Nel profilo chimico del nihonshu, quale dei seguenti acidi è considerato uno dei principali responsabili del suo caratteristico equilibrio di sapore e acidità?",
+    "risposta_corretta_it": "Uno dei principali acidi nel nihonshu è l'acido lattico, che contribuisce a un gusto morbido e bilanciato",
+    "opzioni_it": "[\"Uno dei principali acidi nel nihonshu è l'acido lattico, che contribuisce a un gusto morbido e bilanciato\", \"L'acido tartarico è predominante nel nihonshu, conferendo un sapore simile a quello del vino\", \"Lo ione manganese è un acido rilevante nel nihonshu, influenzando la fermentazione\", \"L'acido muriatico è il principale acido che definisce il profilo gustativo del nihonshu\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 22,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Nel processo di lavorazione del riso per la produzione di nihonshu, dopo il processo di sbiancatura e di lavaggio, quale è la fase successiva nella preparazione del riso?",
+    "risposta_corretta_it": "Il riso viene messo in ammollo per un lasso di tempo controlalto con estrema precisione",
+    "opzioni_it": "[\"Il riso viene messo in ammollo per un lasso di tempo controlalto con estrema precisione\", \"Il riso viene cotto al vapore per sterilizzarlo\", \"Il riso viene tostato per sviluppare aromi particolari prima della fermentazione\", \"Il riso viene trasportato nella kōji-muro, dove viene inoculato con il fungo kōji\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 23,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Quale delle seguenti affermazioni descrive correttamente l'uso e la storia dei lieviti nella produzione del nihonshu?",
+    "risposta_corretta_it": "La distribuzione controllata dei ceppi di lievito per la produzione di nihonshu iniziò nel XX secolo grazie alla Brewing Society of Japan",
+    "opzioni_it": "[\"La distribuzione controllata dei ceppi di lievito per la produzione di nihonshu iniziò nel XX secolo grazie alla Brewing Society of Japan\", \"Il lievito è sempre naturalmente presente nel riso, quindi non è necessario selezionarlo durante la produzione\", \"I lieviti naturali non sono mai utilizzati perché rendono il nihonshu sgradevole\", \"I ceppi di lievito sono una scoperta recente e non influiscono significativamente sul profilo aromatico del nihonshu\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 24,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Per garantire una buona fermentazione nella produzione del nihonshu, quale dei seguenti elementi è fondamentale per creare un ambiente inibitore della proliferazione di batteri indesiderati?",
+    "risposta_corretta_it": "Acido lattico, che acidifica l’ambiente e protegge la fermentazione favorendo lo sviluppo dei lieviti buoni",
+    "opzioni_it": "[\"Acido lattico, che acidifica l’ambiente e protegge la fermentazione favorendo lo sviluppo dei lieviti buoni\", \"Aminoacidi, che migliorano il gusto e hanno effetto diretto sulla sterilità dell’ambiente di fermentazione\", \"Glucosio, che alimenta la fermentazione ma favorisce anche i batteri se non controllato\", \"Alcol etilico, che viene inizialmente prodotto proprio per controllare i batteri\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 25,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Nella kōji-muro, il fungo kōji scompone gli amidi in glucosio (processo di saccarificazione del riso). Quanto tempo viene solitamente impiegato per questo processo?",
+    "risposta_corretta_it": "Due giorni",
+    "opzioni_it": "[\"Due giorni\", \"Dagli undici ai tredici giorni\", \"Circa un mese\", \"Sei ore\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 26,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Durante la fase di sbiancatura del riso nella produzione di nihonshu, quale componente viene principalmente rimosso insieme agli strati esterni del chicco?",
+    "risposta_corretta_it": "Proteine e grassi, per lasciare un nucleo ricco di amido più puro",
+    "opzioni_it": "[\"Proteine e grassi, per lasciare un nucleo ricco di amido più puro\", \"Amidi e grassi, per ottenere un riso meno calorico\", \"Glucosio e grassi, che interferiscono con la saccarificazione\", \"Acidi e sali minerali, che alterano il sapore del prodotto\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 27,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Nel metodo tradizionale di produzione sandan-jikomi, che prevede tre fasi di aggiunta di ingredienti al moromi, in quale giorno normalmente si lascia il moromi a riposare senza aggiunte?",
+    "risposta_corretta_it": "Odori 踊り, il secondo giorno",
+    "opzioni_it": "[\"Odori 踊り, il secondo giorno\", \"Hatsuzoe 初添え, il primo giorno\", \"Nakazoe 中添え, il terzo giorno\", \"Tomezoe 留添え, il quarto giorno\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 28,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Per la produzione dello shubo, quale metodo è oggi il più comune e quale invece indica una tecnica tra le più tradizionali ma molto lenta?",
+    "risposta_corretta_it": "Sokujō è il più comune, yamahai uno dei più tradizionali",
+    "opzioni_it": "[\"Sokujō è il più comune, yamahai uno dei più tradizionali\", \"Yamahai è il più comune, sokujō uno dei più tradizionali\", \"Futsūshu è il più comune, ginjō uno dei più tradizionali\", \"Moromi è il più comune, shubo uno dei più tradizionali\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 29,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Cosa significa il termine sandan-jikomi nel processo di produzione del nihonshu?",
+    "risposta_corretta_it": "La tecnica di lavorazione del moromi che prevede l’aggiunta di ingredienti in tre fasi",
+    "opzioni_it": "[\"La tecnica di lavorazione del moromi che prevede l’aggiunta di ingredienti in tre fasi\", \"Bere tre volte dallo stesso o-choko; parte di una cerimonia matrimoniale giapponese\", \"Una formula poetica usata per descrivere il sake più apprezzato dai consumatori\", \"Una tecnica di filtrazione che separa il kasu dal liquido fermentato in tre stadi\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 30,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Qual è la condizione ottimale del riso alla fine della cottura al vapore nella produzione del nihonshu?",
+    "risposta_corretta_it": "Duro dentro e morbido fuori",
+    "opzioni_it": "[\"Duro dentro e morbido fuori\", \"Tutto morbido\", \"Morbido dentro e duro fuori\", \"Tutto duro\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 31,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Sto producendo un nihonshu con metodo sokujo 速嬲. Qual è il corretto procedimento iniziale di preparazione dello shubo?",
+    "risposta_corretta_it": "Il primo giorno unisco kōjimai, kakemai, acido lattico e lieviti (per avviare lo shubo in modo rapido e controllato)",
+    "opzioni_it": "[\"Il primo giorno unisco kōjimai, kakemai, acido lattico e lieviti (per avviare lo shubo in modo rapido e controllato)\", \"Il primo giorno unisco kōjimai e kakemai, dopo una settimana aggiungerò i lieviti\", \"Non aggiungo i lieviti nel metodo sokujo\", \"Aggiungo solo acqua e attendo la fermentazione spontanea\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 32,
+    "categoria": "PRODUZIONE",
+    "testo_it": "In una produzione di nihonshu, quale percentuale approssimativa rappresenta lo shubo, ovvero il lievito starter, rispetto al volume totale della fermentazione?",
+    "risposta_corretta_it": "0.06",
+    "opzioni_it": "[\"0.06\", \"0.12\", \"0.2\", \"0.03\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 33,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Nel contesto della produzione del nihonshu, cosa indica il termine seimaibuai 精米歩合?",
+    "risposta_corretta_it": "Percentuale del chicco rimasta",
+    "opzioni_it": "[\"Percentuale del chicco rimasta\", \"Percentuale di sbiancatura del chicco tolta\", \"Percentuale di contenuto alcolico previsto\", \"Percentuale di umidità del riso prima della cottura\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 34,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Qual è il grado minimo di seimaibuai richiesto affinché un nihonshu possa essere classificato come daiginjō?",
+    "risposta_corretta_it": "50",
+    "opzioni_it": "[\"50\", \"30\", \"60\", \"70\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 35,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Quale è il grado di acidità del nihonshu rispetto a quella del vino?",
+    "risposta_corretta_it": "Circa un quinto",
+    "opzioni_it": "[\"Circa un quinto\", \"Circa stessa\", \"Circa metà\", \"Quasi il doppio\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 36,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Quale sostanza è naturalmente più abbondante nel nihonshu rispetto ad altre bevande alcoliche come vino o birra?",
+    "risposta_corretta_it": "Amminoacidi",
+    "opzioni_it": "[\"Amminoacidi\", \"Proteine\", \"Sali\", \"Zuccheri\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 37,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Secondo la legge giapponese il nihonshu, per poter essere definito tale, oltre a dover essere prodotto con solo riso, attraverso quale processo deve passare?",
+    "risposta_corretta_it": "pressatura o filtraggio",
+    "opzioni_it": "[\"pressatura o filtraggio\", \"scottatura\", \"blending\", \"pastorizzazione\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 38,
+    "categoria": "PRODUZIONE",
+    "testo_it": "Qual è indicativamente la percentuale media di alcol presente nel sakekasu 酒粕?",
+    "risposta_corretta_it": "Tra il 6% e l'8%",
+    "opzioni_it": "[\"Tra il 6% e l'8%\", \"Tra lo 0% e il 2%\", \"Tra il 2% e il 4%\", \"Tra il 4% e il 8%\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 39,
+    "categoria": "INGREDIENTI",
+    "testo_it": "Qual è la percentuale di acqua contenuta mediamente in un nihonshu finito?",
+    "risposta_corretta_it": "Circa l’80%, poiché l’acqua è l’ingrediente principale e fondamentale per il suo equilibrio",
+    "opzioni_it": "[\"Circa l’80%, poiché l’acqua è l’ingrediente principale e fondamentale per il suo equilibrio\", \"Circa il 50%, simile a molti vini leggeri\", \"Circa il 30%, poiché la maggior parte è composta da alcol e zuccheri\", \"Meno del 10%, dato che viene eliminata durante la fermentazione\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 40,
+    "categoria": "INGREDIENTI",
+    "testo_it": "Il riso utilizzato per la produzione di nihonshu è noto come sakamai. All'interno del chicco di queste varietà è visibile una parte opaca centrale che contiene principalmente amido puro. Come si chiama questa sezione?",
+    "risposta_corretta_it": "Shinpaku 心白",
+    "opzioni_it": "[\"Shinpaku 心白\", \"Sakekasu 酒粕\", \"Genmai 玄米\", \"Nuka 糠\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 41,
+    "categoria": "INGREDIENTI",
+    "testo_it": "Quale tra le seguenti varietà di riso è considerata la più pregiata e comunemente utilizzata per la produzione di junmai daiginjō da competizione grazie alla sua struttura interna ideale per la fermentazione?",
+    "risposta_corretta_it": "Yamada Nishiki 山田錦",
+    "opzioni_it": "[\"Yamada Nishiki 山田錦\", \"Koshihikari コシヒカリ\", \"Sakamai 酒米\", \"Gyūdon teishoku 牛丼定食\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 42,
+    "categoria": "INGREDIENTI",
+    "testo_it": "L'unità di misura senryūjū 千粒重, usata per descrivere la dimensione dei chicchi di riso, indica:",
+    "risposta_corretta_it": "Il peso di 1000 chicchi",
+    "opzioni_it": "[\"Il peso di 1000 chicchi\", \"Il peso di 100 chicchi\", \"Il peso di 10.000 chicchi\", \"Il numero di chicchi contenuti in un grammo\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 43,
+    "categoria": "INGREDIENTI",
+    "testo_it": "Qual è l’enzima presente nella saliva umana e prodotto anche dal kōji, responsabile della scomposizione degli amidi del riso in zuccheri semplici?",
+    "risposta_corretta_it": "Amilasi",
+    "opzioni_it": "[\"Amilasi\", \"Proteasi\", \"Aspergillus Oryzae\", \"Lattasi\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 44,
+    "categoria": "INGREDIENTI",
+    "testo_it": "Qual è l’effetto principale dell’azione del kōji sul riso durante la produzione di kōjimai?",
+    "risposta_corretta_it": "Trasforma l’amido del riso in zucchero",
+    "opzioni_it": "[\"Trasforma l’amido del riso in zucchero\", \"Trasforma lo zucchero del riso in alcol\", \"Permette al riso di assorbire il microrganismo stesso del kōji\", \"Neutralizza l’acidità naturale del riso\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 45,
+    "categoria": "INGREDIENTI",
+    "testo_it": "Che tipo di varietà di riso viene prevalentemente usata per produrre nihonshu?",
+    "risposta_corretta_it": "Riso japonica",
+    "opzioni_it": "[\"Riso japonica\", \"Riso javanica\", \"Riso indica\", \"Riso glutinoso\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 46,
+    "categoria": "INGREDIENTI",
+    "testo_it": "Quale prefettura in Giappone è la principale produttrice di riso Yamadanishiki, considerato il più pregiato per la produzione di sake?",
+    "risposta_corretta_it": "Hyōgo-ken 兵庫県",
+    "opzioni_it": "[\"Hyōgo-ken 兵庫県\", \"Hokkaidō-ken 北海道県\", \"Hiroshima-ken 広島県\", \"Fukushima-ken　福島県\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 47,
+    "categoria": "INGREDIENTI",
+    "testo_it": "Qual è il nome della fonte di Kyōto famosa per la purezza dell'acqua usata nella produzione del nihonshu?",
+    "risposta_corretta_it": "Fushimi no mizu 伏見の水",
+    "opzioni_it": "[\"Fushimi no mizu 伏見の水\", \"Fuchū-shi 府中市\", \"Ehime-ken 愛媛県\", \"Miyamizu 宮水\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 48,
+    "categoria": "INGREDIENTI",
+    "testo_it": "Quale sostanza presente nell'acqua è considerata benefica per la produzione del nihonshu?",
+    "risposta_corretta_it": "Potassio カリウム",
+    "opzioni_it": "[\"Potassio カリウム\", \"Manganese マンガン\", \"Ferro 鉄\", \"Calcio カルシウム\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 49,
+    "categoria": "INGREDIENTI",
+    "testo_it": "Quale tipo di kōji viene generalmente utilizzato per la produzione di nihonshu?",
+    "risposta_corretta_it": "Kōji giallo 黄麹菌 (kikōji-kin)",
+    "opzioni_it": "[\"Kōji giallo 黄麹菌 (kikōji-kin)\", \"Kōji bianco 白麹菌 (shirokōji-kin)\", \"Kōji nero 黒麹菌 (kurokōji-kin)\", \"Kōji rosso 紅麹菌 (benikōji-kin)\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 50,
+    "categoria": "INGREDIENTI",
+    "testo_it": "Quale tipo di kōji viene generalmente utilizzato per la produzione di shōchū?",
+    "risposta_corretta_it": "Kōji bianco 白麹菌 (shirokōji-kin)",
+    "opzioni_it": "[\"Kōji bianco 白麹菌 (shirokōji-kin)\", \"Kōji nero 黒麹菌 (kurokōji-kin)\", \"Kōji rosso 紅麹菌 (benikōji-kin)\", \"Kōji giallo 黄麹菌 (kikōji-kin)\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 51,
+    "categoria": "INGREDIENTI",
+    "testo_it": "Quale tipo di kōji viene generalmente utilizzato per la produzione di awamori?",
+    "risposta_corretta_it": "Kōji nero 黒麹菌 (kurokōji-kin)",
+    "opzioni_it": "[\"Kōji nero 黒麹菌 (kurokōji-kin)\", \"Kōji rosso 紅麹菌 (benikōji-kin)\", \"Kōji giallo 黄麹菌 (kikōji-kin)\", \"Kōji bianco 白麹菌 (shirokōji-kin)\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 52,
+    "categoria": "COCKTAIL",
+    "testo_it": "Quale tra questi distillati è il più consigliato come base per un cocktail con base nihonshu?",
+    "risposta_corretta_it": "Vodka",
+    "opzioni_it": "[\"Vodka\", \"Rum\", \"Tequila\", \"Gin\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 53,
+    "categoria": "ETICHETTE",
+    "testo_it": "Quale delle seguenti non è una corretta dicitura tra le categorie designate di sake (tokutei meishō-shu 特定名称酒)?",
+    "risposta_corretta_it": "Junmai Honjōzō",
+    "opzioni_it": "[\"Junmai Honjōzō\", \"Junmai Daiginjō\", \"Honjōzō\", \"Tokubetsu Honjōzō\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 54,
+    "categoria": "ETICHETTE",
+    "testo_it": "Cosa si intende con l'acronimo G.I. nel contesto della produzione e classificazione del nihonshu?",
+    "risposta_corretta_it": "Geographical Indication, indicazione geografica che tutela la provenienza del prodotto",
+    "opzioni_it": "[\"Geographical Indication, indicazione geografica che tutela la provenienza del prodotto\", \"Ginjō Indication, indicazione di un sake con aroma eccezionale\", \"General Indication, termine generico per futsūshu locali\", \"Great Indication, indicazione dell'alta qualità del prodotto finale\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 55,
+    "categoria": "ETICHETTE",
+    "testo_it": "Scegli lo honjōzō",
+    "risposta_corretta_it": "本醸造酒",
+    "opzioni_it": "[\"本醸造酒\", \"純米酒\", \"吟醸酒\", \"普通酒\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 56,
+    "categoria": "FINITURE E ANALISI",
+    "testo_it": "Quale tra queste è la definizione corretta di nigori-zake? Con quali tipi di pietanze si abbina meglio questa varietà di nihonshu?",
+    "risposta_corretta_it": "Nihonshu parzialmente filtrato, dal colore lattiginoso, che si abbina bene a cibi piccanti o speziati",
+    "opzioni_it": "[\"Nihonshu parzialmente filtrato, dal colore lattiginoso, che si abbina bene a cibi piccanti o speziati\", \"Nihonshu parzialmente filtrato, dal colore lattiginoso, che si abbina principalmente a piatti di pesce crudo e sushi delicati\", \"Nihonshu completamente filtrato e pastorizzato, ideale con cibi speziati o dessert cremosi\", \"Nihonshu frizzante e dolce, perfetto con piatti a base di carne rossa e stufati\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 57,
+    "categoria": "FINITURE E ANALISI",
+    "testo_it": "Quale tra le seguenti è una descrizione accurata dei nihonshu di tipo nama-zake, nama-chozō, nama-zume?",
+    "risposta_corretta_it": "Sake completamente non pastorizzato (nama-zake), sake pastorizzato solo al momento dell’imbottigliamento (nama-chozō), sake pastorizzato prima dello stoccaggio ma non prima dell’imbottigliamento (nama-zume)",
+    "opzioni_it": "[\"Sake completamente non pastorizzato (nama-zake), sake pastorizzato solo al momento dell’imbottigliamento (nama-chozō), sake pastorizzato prima dello stoccaggio ma non prima dell’imbottigliamento (nama-zume)\", \"Sake non pastorizzato (nama-zake), sake pastorizzato due volte (nama-chozō), sake pastorizzato una volta al termine della fermentazione (nama-zume)\", \"Sake non filtrato (nama-zake), sake filtrato ma non pastorizzato (nama-chozō), sake filtrato e pastorizzato una sola volta (nama-zume)\", \"Sake frizzante (nama-zake), sake still (nama-chozō), sake dolce (nama-zume)\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 58,
+    "categoria": "FINITURE E ANALISI",
+    "testo_it": "Nella produzione del nihonshu, quale delle seguenti fasi è considerata opzionale e può variare a seconda del tipo di sake prodotto?",
+    "risposta_corretta_it": "La pastorizzazione",
+    "opzioni_it": "[\"La pastorizzazione\", \"L'ammollo del riso prima della cottura\", \"La diluizione del prodotto con acqua\", \"L'inoculazioni del kōji\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 59,
+    "categoria": "FINITURE E ANALISI",
+    "testo_it": "Il valore SMV (日本酒度 Nihonshu-do ) misura la densità relativa del nihonshu rispetto all'acqua e fornisce un'indicazione del residuo zuccherino nel prodotto finito. Quale tra i seguenti intervalli rappresenta più accuratamente il range tipico dei valori SMV?",
+    "risposta_corretta_it": "Generalmente varia tra -5 e +5, dove i valori negativi indicano un gusto più dolce e quelli positivi un gusto più secco",
+    "opzioni_it": "[\"Generalmente varia tra -5 e +5, dove i valori negativi indicano un gusto più dolce e quelli positivi un gusto più secco\", \"Varia sempre tra -20 e -10 perché il nihonshu è una bevanda dolce\", \"Varia tra -15 e +15 ma è fisso per ogni categoria di nihonshu\", \"Solitamente si trova tra 0 e +15, ma solo per i nihonshu di livello premium\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 60,
+    "categoria": "FINITURE E ANALISI",
+    "testo_it": "Durante la produzione del kijōshu, uno stile ricco e dolce di nihonshu, cosa viene aggiunto nella fase finale della fermentazione al posto dell’acqua tradizionalmente usata?",
+    "risposta_corretta_it": "Nihonshu, che arricchisce il corpo e dolcezza senza interrompere del tutto la fermentazione",
+    "opzioni_it": "[\"Nihonshu, che arricchisce il corpo e dolcezza senza interrompere del tutto la fermentazione\", \"Alcol distillato, per aumentare la gradazione come nei sake fortificati\", \"Zucchero, per aumentare il residuo zuccherino finale\", \"Lieviti, per rilanciare una seconda fermentazione\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 61,
+    "categoria": "FINITURE E ANALISI",
+    "testo_it": "Come si chiama il tipo di nihonshu tradizionalmente affinato in botti di legno di cedro giapponese, che gli conferiscono un aroma distintivo?",
+    "risposta_corretta_it": "Taru-zake",
+    "opzioni_it": "[\"Taru-zake\", \"Ama-zake\", \"Nama-zake\", \"Kudari-zake\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 62,
+    "categoria": "FINITURE E ANALISI",
+    "testo_it": "Come viene chiamato il tipo di nihonshu a cui non viene aggiunta acqua alla fine della produzione, risultando in una gradazione alcolica più alta e un gusto più concentrato?",
+    "risposta_corretta_it": "Genshu",
+    "opzioni_it": "[\"Genshu\", \"Kijōshu\", \"Ki'ippon\", \"Futsūshu\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 63,
+    "categoria": "FINITURE E ANALISI",
+    "testo_it": "Come viene chiamato il tipo di nihonshu che non viene sottoposto a pastorizzazione nemmeno una volta durante tutto il processo produttivo?",
+    "risposta_corretta_it": "Nama-zake",
+    "opzioni_it": "[\"Nama-zake\", \"Nama-chozō\", \"Nama-tzume\", \"Nama-shibori\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 64,
+    "categoria": "FINITURE E ANALISI",
+    "testo_it": "Che tipo di legno è tradizionalmente utilizzato in Giappone per la produzione di masu e taru, contenitori fondamentali nel campo del nihonshu?",
+    "risposta_corretta_it": "Cedro 杉 (sugi)",
+    "opzioni_it": "[\"Cedro 杉 (sugi)\", \"Quercia 樫 (kashi)\", \"Ciliegio 桜 (sakura)\", \"Pino 松 (matsu)\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 65,
+    "categoria": "FINITURE E ANALISI",
+    "testo_it": "La scelta produttiva del metodo kimoto 生酛 indica che l'acido lattico",
+    "risposta_corretta_it": "è generato naturalmente da lactobacilli e lactococchi durante la fermentazione dello shubo",
+    "opzioni_it": "[\"è generato naturalmente da lactobacilli e lactococchi durante la fermentazione dello shubo\", \"è generato dal lievito durante la fermentazione del moromi\", \"viene aggiunto manualmente in produzione\", \"viene rimosso prima della fermentazione per controllare il profilo aromatico\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 66,
+    "categoria": "FINITURE E ANALISI",
+    "testo_it": "Quale parametro indica l'acronimo SMV? E come viene chiamato questo parametro in giapponese?",
+    "risposta_corretta_it": "Sake metre value, nihonshudo 日本酒度",
+    "opzioni_it": "[\"Sake metre value, nihonshudo 日本酒度\", \"Sugar metre value, tōdokei 糖度計\", \"Sake matching value, sake matchingu-chi 酒マッチング値\", \"Sodium mineral value, natoriumu minareru-chi ナトリウムミネラル値\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 67,
+    "categoria": "FINITURE E ANALISI",
+    "testo_it": "Qual è il beneficio maggiore della pastorizzazione 火入れ (hi-ire) nella produzione del nihonshu?",
+    "risposta_corretta_it": "Prevenire la crescita di batteri indesiderati",
+    "opzioni_it": "[\"Prevenire la crescita di batteri indesiderati\", \"Migliorare il processo di fermentazione\", \"Correggere i difetti di sapore\", \"Permettere una maturazione più rapida\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 68,
+    "categoria": "FINITURE E ANALISI",
+    "testo_it": "Un'etichetta riporta un nihonshu-do di 17. Basandosi esclusivamente su questo parametro, che tipo di prodotto ci si può aspettare?",
+    "risposta_corretta_it": "Un nihonshu molto dolce",
+    "opzioni_it": "[\"Un nihonshu molto dolce\", \"Un nihonshu molto secco\", \"Uno shōchū bilanciato\", \"Uno shōchū molto dolce\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 69,
+    "categoria": "INDUSTRIA E ICONE DEL SAKE",
+    "testo_it": "Indicativamente quante sakagura 酒蔵 sono attive oggi in Giappone?",
+    "risposta_corretta_it": "Circa 1.200",
+    "opzioni_it": "[\"Circa 1.200\", \"Circa 600\", \"Circa 2.200\", \"Circa 3.000\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 70,
+    "categoria": "INDUSTRIA E ICONE DEL SAKE",
+    "testo_it": "Quante prefetture del Giappone producono nihonshu a livello commerciale, secondo le statistiche ufficiali nazionali?",
+    "risposta_corretta_it": "47",
+    "opzioni_it": "[\"47\", \"40\", \"58\", \"45\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 71,
+    "categoria": "MISUNDERSTANDING",
+    "testo_it": "Il baijiu 白酒, una delle bevande alcoliche tradizionali cinesi più diffuse, viene prodotto con tecniche specifiche. Quale delle seguenti affermazioni lo descrive correttamente?",
+    "risposta_corretta_it": "Il baijiu è sempre distillato, ottenuto principalmente da sorgo, e ha un elevato grado alcolico",
+    "opzioni_it": "[\"Il baijiu è sempre distillato, ottenuto principalmente da sorgo, e ha un elevato grado alcolico\", \"Il baijiu è una bevanda fermentata anche conosciuta con il nome di shaojiu 焼酒\", \"Il baijiu ha sempre una gradazione alcolica fissa del 60% vol\", \"Il baijiu è ottenuto esclusivamente dal riso tramite una doppia fermentazione simile al nihonshu\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 72,
+    "categoria": "SAKE & FOOD PAIRING",
+    "testo_it": "Quali tra queste proposte culinarie si abbinano meglio con un nihonshu di categoria ginjō?",
+    "risposta_corretta_it": "Piatti delicati e aromatici come sashimi, carpaccio di pesce bianco o risotto agli agrumi",
+    "opzioni_it": "[\"Piatti delicati e aromatici come sashimi, carpaccio di pesce bianco o risotto agli agrumi\", \"Cibi grassi e intensi come tonkotsu ramen, lasagne alla bolognese o salumi stagionati\", \"Cibi piccanti o fermentati come kimchi, curry giapponese e penne all'arrabbiata\", \"Cibi fritti e croccanti come tempura, arancini e patatine fritte\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 73,
+    "categoria": "SAKE & FOOD PAIRING",
+    "testo_it": "Quali tra queste sono caratteristiche del nihonshu che possono invogliare a provarlo qualcuno che non lo conosce?",
+    "risposta_corretta_it": "Versatilità negli abbinamenti, ampia gamma di aromi (fruttati, floreali, umami), possibilità di berlo caldo o freddo",
+    "opzioni_it": "[\"Versatilità negli abbinamenti, ampia gamma di aromi (fruttati, floreali, umami), possibilità di berlo caldo o freddo\", \"Gradazione alcolica elevata, gusto fortemente amaro e consumo riservato a cerimonie tradizionali\", \"Presenza di bollicine naturali, fermentazione spontanea in bottiglia e sapore simile allo champagne\", \"Preparazione a base di frutta, dolcezza accentuata e bassa gradazione come i liquori da dessert\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 74,
+    "categoria": "SAKE & FOOD PAIRING",
+    "testo_it": "Quale delle seguenti affermazioni descrive meglio una scelta consapevole di abbinamento tra nihonshu e un piatto piccante?",
+    "risposta_corretta_it": "Uso un sake nigori (non filtrato e spesso più dolce) per smussare il piccante del piatto",
+    "opzioni_it": "[\"Uso un sake nigori (non filtrato e spesso più dolce) per smussare il piccante del piatto\", \"Uso un sake particolarmente secco per contrastare l’oleosità del piatto piccante\", \"Uso un sake ricco di umami per esaltare il sapore speziato del piatto\", \"Uso un sake ginjō molto aromatico per rinforzare la sensazione di calore e piccantezza\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 75,
+    "categoria": "SAKE & FOOD PAIRING",
+    "testo_it": "Quale profilo sensoriale ci si può ragionevolmente aspettare da un nihonshu con indicati seguenti parametri in etichetta? Seimaibuai 50%; riso Yamadanishiki; nihonshu-do +2, acidità 0,8; alcol 15%",
+    "risposta_corretta_it": "Un sake aromatico, leggero, beverino",
+    "opzioni_it": "[\"Un sake aromatico, leggero, beverino\", \"Un sake secco e poco aromatico\", \"Un sake dal gusto ricco, pesante e complesso\", \"Un sake dolce e lattico\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 76,
+    "categoria": "SAKE & FOOD PAIRING",
+    "testo_it": "Il termine giapponese umami, utilizzato per descrivere uno dei gusti fondamentali, è meglio tradotto come:",
+    "risposta_corretta_it": "Saporito, o gusto gradevole e profondo, spesso associato a glutammato e brodo",
+    "opzioni_it": "[\"Saporito, o gusto gradevole e profondo, spesso associato a glutammato e brodo\", \"Salato, in quanto è simile al gusto che si percepisce nel sale\", \"Gustoso in senso generico, come sinonimo di “buono”\", \"Piccante, perché spesso compare in cibi ricchi di spezie\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 77,
+    "categoria": "SERVIZIO",
+    "testo_it": "Quali caratteristiche professionali deve avere un buon Sake Sommelier?",
+    "risposta_corretta_it": "Conoscenza approfondita delle categorie di nihonshu, capacità di abbinamento al cibo, competenze nella degustazione e nel servizio",
+    "opzioni_it": "[\"Conoscenza approfondita delle categorie di nihonshu, capacità di abbinamento al cibo, competenze nella degustazione e nel servizio\", \"Esperienza in cucina giapponese, abilità nel preparare il riso e certificazione da chef\", \"Capacità di lavorare in sakagura, conoscenza tecnica dei macchinari di fermentazione e filtrazione\", \"Abilità nella miscelazione di cocktail, conoscenza dei distillati e delle birre artigianali\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 78,
+    "categoria": "SERVIZIO",
+    "testo_it": "Quali tra questi potrebbero essere punti forti per incoraggiare la vendita quando si consiglia un nihonshu in un ristorante come Sake Sommelier?",
+    "risposta_corretta_it": "Raccontare la storia della cantina, descrivere profilo aromatico e abbinamenti, offrire assaggio se possibile",
+    "opzioni_it": "[\"Raccontare la storia della cantina, descrivere profilo aromatico e abbinamenti, offrire assaggio se possibile\", \"Spiegare i dettagli tecnici della fermentazione, elencare i ceppi di kōbo utilizzati, indicare il numero di lotto\", \"Insistere sulla gradazione alcolica elevata, paragonarlo a vini liquorosi europei e offrire solo nihonshu freddo\", \"Sottolineare che è una bevanda rara e di nicchia, dal gusto complesso e difficile da apprezzare\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 79,
+    "categoria": "SERVIZIO",
+    "testo_it": "Quali tra questi potrebbero essere punti forti per incoraggiare la vendita quando si consiglia un nihonshu in un ristorante come Sake Sommelier?",
+    "risposta_corretta_it": "Raccontare la storia della cantina, descrivere il profilo aromatico e gli abbinamenti, offrire assaggio se possibile",
+    "opzioni_it": "[\"Raccontare la storia della cantina, descrivere il profilo aromatico e gli abbinamenti, offrire assaggio se possibile\", \"Spiegare i dettagli tecnici della fermentazione, elencare i ceppi di kōbo utilizzati, indicare il numero di lotto\", \"Insistere sulla gradazione alcolica elevata, paragonarlo a vini liquorosi europei e offrire solo nihonshu freddo\", \"Sottolineare che è una bevanda rara e di nicchia, dal gusto complesso e difficile da apprezzare\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 80,
+    "categoria": "SERVIZIO",
+    "testo_it": "Come si chiamano i bicchieri di ceramica in cui si serve il nihonshu?",
+    "risposta_corretta_it": "Choko (猪口)",
+    "opzioni_it": "[\"Choko (猪口)\", \"Masu (枡)\", \"Yunomi (湯のみ)\", \"Sakazuki (盃)\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 81,
+    "categoria": "SERVIZIO",
+    "testo_it": "Il sake può essere servito a diverse temperature, ciascuna con un nome specifico nella cultura giapponese. Quale tra le seguenti temperature corrisponde alla temperatura di servizio tiepida?",
+    "risposta_corretta_it": "Circa 40°C – Nuru-kan (温燗)",
+    "opzioni_it": "[\"Circa 40°C – Nuru-kan (温燗)\", \"Circa 30°C – Hinata-kan (日向燗)\", \"Circa 45°C – Jō-kan (上燗)\", \"Circa 50°C – Atsu-kan (熱燗)\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 82,
+    "categoria": "SERVIZIO",
+    "testo_it": "Nel contesto delle categorie di nihonshu, quale delle seguenti affermazioni descrive in modo più accurato le differenze tipiche tra un junmai-shu e un ginjō-shu in termini di corpo e profilo aromatico?",
+    "risposta_corretta_it": "Generalmente, il junmai-shu è più corposo e ricco di umami, mentre il ginjō-shu tende ad essere più leggero e fruttato",
+    "opzioni_it": "[\"Generalmente, il junmai-shu è più corposo e ricco di umami, mentre il ginjō-shu tende ad essere più leggero e fruttato\", \"Generalmente, il junmai-shu è più leggero e delicato, mentre il ginjō-shu è più corposo e aromatico\", \"Generalmente, junmai-shu e ginjō-shu hanno profili simili, entrambi corposi e poco aromatici\", \"Il ginjō-shu è sempre più corposo del junmai-shu, che invece è più fruttato e leggero\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 83,
+    "categoria": "SERVIZIO",
+    "testo_it": "Generalmente, qual è la temperatura consigliata per apprezzare al meglio un daiginjō durante la degustazione?",
+    "risposta_corretta_it": "Verso nel bicchiere a 12°C e degusto a 15°C",
+    "opzioni_it": "[\"Verso nel bicchiere a 12°C e degusto a 15°C\", \"Verso nel bicchiere a 3°C e degusto a 6°C\", \"Verso nel bicchiere e degusto a temperatura ambiente\", \"Verso nel bicchiere a 40°C e degusto a 35°C\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 84,
+    "categoria": "SERVIZIO",
+    "testo_it": "Quando il sake viene riscaldato a circa 45°C (jōkan 上燗), cambia generalmente il suo profilo gustativo?",
+    "risposta_corretta_it": "Sì, diventa più secco",
+    "opzioni_it": "[\"Sì, diventa più secco\", \"Sì, diventa più dolce\", \"No, il gusto rimane costante\", \"Il gusto diventa più fruttato\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 85,
+    "categoria": "SERVIZIO",
+    "testo_it": "Ipotizzando di non poter assaggiare questo nihonshu, ma basandoti solo sulle informazioni della scheda tecnica, quale abbinamento è più adatto? E in quale bicchiere lo serviresti? 純米酒, acidità 1,9, Nihonshudo +7",
+    "risposta_corretta_it": "Servito in un ochoko e abbinato a maiale agrodolce",
+    "opzioni_it": "[\"Servito in un ochoko e abbinato a maiale agrodolce\", \"Servito in un calice da vino bianco per valorizzarne l’aroma e abbianto a tartare di pesce con un filo d’olio\", \"Servito in un calice da vino bianco, fresco, come aperitivo\", \"Servito in un ochoko e abbinato a dolci delicati a base di riso o frutta\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 86,
+    "categoria": "SERVIZIO",
+    "testo_it": "Quale tra le seguenti indicazioni di servizio è più appropriata per un nihonshu servito molto caldo, a circa 50°C (atsukan 熱燗)?",
+    "risposta_corretta_it": "Mi serve un bicchiere piccolo",
+    "opzioni_it": "[\"Mi serve un bicchiere piccolo\", \"Mi serve un bicchiere grande\", \"Non è importante il bicchiere in cui lo verso\", \"Meglio un bicchiere in vetro sottile\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 87,
+    "categoria": "SERVIZIO",
+    "testo_it": "Qualora in etichetta siano presenti i caratteri 大吟醸, come regola generale a che temperatura andrà servito il nihonshu in questione?",
+    "risposta_corretta_it": "Fresco",
+    "opzioni_it": "[\"Fresco\", \"Freddo\", \"Tiepido\", \"Caldo\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 88,
+    "categoria": "TASTING",
+    "testo_it": "ANALISI VISIVA: Qual è la limpidezza del nihonshu in assaggio?",
+    "risposta_corretta_it": "Opaco",
+    "opzioni_it": "[\"Opaco\", \"Velato\", \"Leggermente torbido\", \"Cristallino\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 89,
+    "categoria": "TASTING",
+    "testo_it": "ANALISI VISIVA: Che tonalità di colore presenta?",
+    "risposta_corretta_it": "Incolore",
+    "opzioni_it": "[\"Incolore\", \"Paglierino\", \"Giallo dorato\", \"Ambrato\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 90,
+    "categoria": "TASTING",
+    "testo_it": "ANALISI VISIVA: Ci sono particelle sospese o segni di invecchiamento visibili?",
+    "risposta_corretta_it": "Nessuna",
+    "opzioni_it": "[\"Nessuna\", \"Poche particelle\", \"Sedimenti evidenti\", \"Ossidazione apparente\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 91,
+    "categoria": "TASTING",
+    "testo_it": "ANALISI OLFATTIVA: Qual è l’intensità aromatica percepita?",
+    "risposta_corretta_it": "Molto debole",
+    "opzioni_it": "[\"Molto debole\", \"Debole\", \"Media\", \"Intensa\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 92,
+    "categoria": "TASTING",
+    "testo_it": "ANALISI OLFATTIVA: Che profili aromatici predominano? (segnare più di uno se rilevante)",
+    "risposta_corretta_it": "Fruttato",
+    "opzioni_it": "[\"Fruttato\", \"Floreale\", \"Lattico\", \"Cereali\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 93,
+    "categoria": "TASTING",
+    "testo_it": "ANALISI OLFATTIVA: Il bouquet aromatico suggerisce una determinata categoria?",
+    "risposta_corretta_it": "Honjōzōshu 本醸造酒",
+    "opzioni_it": "[\"Honjōzōshu 本醸造酒\", \"Ginjōshu 吟醸酒\", \"Junmai ginjōshu 純米吟醸酒\", \"Junmaishu 純米酒\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 94,
+    "categoria": "TASTING",
+    "testo_it": "ANALISI GUSTATIVA: In quale categoria gustativa collocheresti il prodotto in degustazione?",
+    "risposta_corretta_it": "Aromatico 薫酒 (kunshu)",
+    "opzioni_it": "[\"Aromatico 薫酒 (kunshu)\", \"Rinfrescante 爽酒 (sōshu)\", \"Ricco 醇酒 (junshu)\", \"Invecchiato 熟酒 (jukushu)\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 95,
+    "categoria": "TASTING",
+    "testo_it": "ANALISI GUSTATIVA: Che valore SMV (日本酒度) assegneresti al prodotto in degustazione?",
+    "risposta_corretta_it": "tra -20 e -10",
+    "opzioni_it": "[\"tra -20 e -10\", \"tra -9 e -3\", \"tra -2 e +2\", \"tra +3 e +9\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 96,
+    "categoria": "TASTING",
+    "testo_it": "ANALISI GUSTATIVA: Come descriveresti il livello di corpo percepito nel prodotto durante la degustazione?",
+    "risposta_corretta_it": "Corpo pieno",
+    "opzioni_it": "[\"Corpo pieno\", \"Corpo medio\", \"Corpo leggero\", \"Assenza di corpo\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 97,
+    "categoria": "TASTING",
+    "testo_it": "ANALISI GUSTATIVA: Come descriveresti il livello di acidità percepito nel prodotto durante la degustazione?",
+    "risposta_corretta_it": "Acidità elevata",
+    "opzioni_it": "[\"Acidità elevata\", \"Acidità moderata\", \"Acidità bassa\", \"Assenza di acidità\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 98,
+    "categoria": "TASTING",
+    "testo_it": "ANALISI GUSTATIVA: Come descriveresti l’intensità dell’umami percepito nel prodotto durante la degustazione?",
+    "risposta_corretta_it": "Umami intenso",
+    "opzioni_it": "[\"Umami intenso\", \"Umami moderato\", \"Umami leggero\", \"Assenza di umami\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 99,
+    "categoria": "TASTING",
+    "testo_it": "ANALISI GUSTATIVA: Come descriveresti l’intensità del ginjō-ka (吟醸香) percepito durante la degustazione?",
+    "risposta_corretta_it": "Intensità marcata",
+    "opzioni_it": "[\"Intensità marcata\", \"Intensità moderata\", \"Intensità leggera\", \"Assenza di ginjō-ka\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  },
+  {
+    "numero": 100,
+    "categoria": "TASTING",
+    "testo_it": "ANALISI GUSTATIVA: In quale denominazione specifica 特定名称 (tokuteimeishō) collocheresti in prodotto in degustazione?",
+    "risposta_corretta_it": "Honjōzōshu 本醸造酒",
+    "opzioni_it": "[\"Honjōzōshu 本醸造酒\", \"Ginjōshu 吟醸酒\", \"Junmai ginjōshu 純米吟醸酒\", \"Junmaishu 純米酒\"]",
+    "tipo": "scelta_multipla",
+    "punti": 1
+  }
+]

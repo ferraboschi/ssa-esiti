@@ -42,10 +42,39 @@ try {
   if (!db.prepare('SELECT COUNT(*) FROM users WHERE email = ?').get('lorenzo@ef-ti.com')['COUNT(*)']) {
     const hash = bcrypt.hashSync('sakecompany2026', 10);
     db.prepare('INSERT INTO users (id, email, nome, cognome, ruolo, password_hash) VALUES (?, ?, ?, ?, ?, ?)')
-      .run(uuid(), 'lorenzo@ef-ti.com', 'Lorenzo', 'Maiko', 'professore', hash);
+      .run(uuid(), 'lorenzo@ef-ti.com', 'Lorenzo', 'Ferraboschi', 'professore', hash);
   }
 } catch (err) {
   console.error('Seed error:', err.message);
+}
+
+// Auto-seed Nihonshu questions if none exist
+try {
+  const questionCount = db.prepare('SELECT COUNT(*) as cnt FROM domande').get().cnt;
+  if (questionCount === 0) {
+    const questionsPath = path.join(__dirname, '../data/nihonshu-questions.json');
+    if (fs.existsSync(questionsPath)) {
+      const questions = JSON.parse(fs.readFileSync(questionsPath, 'utf-8'));
+      const corso = db.prepare("SELECT id FROM corsi WHERE tipo = 'nihonshu' LIMIT 1").get();
+      if (corso) {
+        // Create exam
+        const esameId = uuid();
+        db.prepare('INSERT INTO esami (id, corso_id, nome, tipo) VALUES (?, ?, ?, ?)')
+          .run(esameId, corso.id, 'Esame Certificato Nihonshu', 'esame');
+
+        const stmt = db.prepare(`INSERT INTO domande (id, esame_id, numero, categoria, testo_it, tipo, risposta_corretta_it, opzioni_it, punti, attiva) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 1)`);
+        const insertAll = db.transaction((qs) => {
+          for (const q of qs) {
+            stmt.run(uuid(), esameId, q.numero, q.categoria, q.testo_it, q.tipo, q.risposta_corretta_it, q.opzioni_it, q.punti);
+          }
+        });
+        insertAll(questions);
+        console.log(`Auto-seeded ${questions.length} Nihonshu questions`);
+      }
+    }
+  }
+} catch (err) {
+  console.error('Question seed error:', err.message);
 }
 
 module.exports = db;
