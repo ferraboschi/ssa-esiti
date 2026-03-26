@@ -66,8 +66,51 @@ async function searchStudent(email) {
   }
 }
 
+// Discover: list all tables in the base via Airtable metadata API
+async function listTables() {
+  const pat = process.env.AIRTABLE_PAT;
+  if (!pat) throw new Error('AIRTABLE_PAT not set');
+
+  const response = await fetch(
+    `https://api.airtable.com/v0/meta/bases/${BASE_ID}/tables`,
+    { headers: { Authorization: `Bearer ${pat}` } }
+  );
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(`Airtable meta API error: ${response.status} - ${text}`);
+  }
+  const data = await response.json();
+  return data.tables || [];
+}
+
+// Fetch ALL records from a table with pagination
+async function fetchAllRecords(tableId) {
+  const pat = process.env.AIRTABLE_PAT;
+  if (!pat) throw new Error('AIRTABLE_PAT not set');
+
+  let allRecords = [];
+  let offset = null;
+
+  do {
+    const url = new URL(`${API_URL}/${BASE_ID}/${encodeURIComponent(tableId)}`);
+    if (offset) url.searchParams.set('offset', offset);
+
+    const response = await fetch(url.toString(), {
+      headers: { Authorization: `Bearer ${pat}` }
+    });
+    if (!response.ok) throw new Error(`Airtable API error: ${response.status}`);
+    const data = await response.json();
+    allRecords = allRecords.concat(data.records || []);
+    offset = data.offset || null;
+  } while (offset);
+
+  return allRecords;
+}
+
 module.exports = {
   fetchStudents,
   syncStudentsToLocal,
-  searchStudent
+  searchStudent,
+  listTables,
+  fetchAllRecords
 };

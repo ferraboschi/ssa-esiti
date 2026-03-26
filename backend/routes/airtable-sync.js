@@ -32,4 +32,31 @@ router.get('/search', requireProfessore, async (req, res) => {
   }
 });
 
+// Discovery: list all tables and their fields in the Airtable base
+router.get('/discover', requireProfessore, async (req, res) => {
+  try {
+    const tables = await airtable.listTables();
+    const summary = tables.map(t => ({
+      id: t.id,
+      name: t.name,
+      fields: (t.fields || []).map(f => ({ id: f.id, name: f.name, type: f.type }))
+    }));
+    res.json({ baseId: 'appj4DEH3RYFqct1Q', tables: summary });
+  } catch (err) {
+    logger.error('Airtable discover error', { error: err.message });
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Discovery: fetch all raw records from a specific table
+router.get('/discover/:tableId', requireProfessore, async (req, res) => {
+  try {
+    const records = await airtable.fetchAllRecords(req.params.tableId);
+    res.json({ count: records.length, records: records.slice(0, 50) }); // limit to 50 for preview
+  } catch (err) {
+    logger.error('Airtable discover table error', { error: err.message });
+    res.status(500).json({ error: err.message });
+  }
+});
+
 module.exports = router;
